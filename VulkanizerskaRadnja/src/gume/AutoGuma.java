@@ -8,7 +8,7 @@ package gume;
  *
  */
 public class AutoGuma {
-
+	
 	/**
 	 * Marka i model gume
 	 */
