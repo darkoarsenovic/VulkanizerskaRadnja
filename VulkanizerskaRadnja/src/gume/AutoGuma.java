@@ -1,6 +1,7 @@
 package gume;
 
 public class AutoGuma {
+
 	private String markaModel = null;
 	private int precnik = 0;
 	private int sirina = 0;
