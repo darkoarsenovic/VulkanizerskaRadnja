@@ -45,7 +45,11 @@ public class VulkanizerskaRadnjaTest {
 
 		r.dodajGumu(a);
 
-		assertTrue(r.pronadjiGumu(a.getMarkaModel()).contains(a));
+		assertTrue(r.pronadjiGumu(a.getMarkaModel()).contains(a)); // prvo sam odradio ovaj deo sa r.gume.contains(a),
+																	// tako sto sam stavio da mi je LinkedList iz klase
+																	// VulkanizerskaRadnja protected, al sam se posle
+																	// ipak odlucio za ovakav pristup da ne bih menjao
+																	// dobijenu klasu
 	}
 
 	@Test(expected = java.lang.NullPointerException.class)
