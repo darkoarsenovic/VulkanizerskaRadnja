@@ -24,14 +24,16 @@ public class VulkanizerskaRadnja {
 	 * @param a
 	 *            nova guma koja se dodaje u listu
 	 * @throws java.lang.RuntimeException
-	 *             kada je uneta guma null ili guma vec postoji u listi
+	 *             kada je uneta guma null
+	 * @throws java.lang.NullPointerException
+	 *             kada uneta guma vec postoji u listi
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
 			throw new NullPointerException("Guma ne sme biti null");
 		if (gume.contains(a))
 			throw new RuntimeException("Guma vec postoji");
-		gume.add(a); //addFirst zamenjan sa add
+		gume.add(a); // addFirst zamenjan sa add
 	}
 
 	/**

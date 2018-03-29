@@ -121,12 +121,22 @@ public class AutoGuma {
 		this.visina = visina;
 	}
 
+	/**
+	 * Vraca auto gumu sa svim njenim karakteristikama
+	 * 
+	 * @return AutoGuma [markaModel=markaModel, precnik=precnik, sirina=sirina, visina=visina] kao String
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik + ", sirina=" + sirina + ", visina="
 				+ visina + "]";
 	}
 
+	/**
+	 * Vraca true ako su uneti objekti jednaki i false ako nisu
+	 * 
+	 * @return true ili false kao boolean
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
